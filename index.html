@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, section, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        p {
+            margin: 0 0 10px;
+        }
+
+        /* Header */
+        header {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+        header h1 {
+            color: #333;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f9f9f9;
+            color: #555;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #fff;
+            color: #333;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-card {
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my work and get to know me!</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I am [Your Name], a passionate developer with a love for creating intuitive and engaging web experiences.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Short description of your project. What does it do? What tools did you use?</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Title 2</h3>
+            <p>Short description of your project. What does it do? What tools did you use?</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message!');
+        });
+    </script>
+</body>
+</html>
